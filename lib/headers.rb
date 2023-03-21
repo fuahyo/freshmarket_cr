@@ -23,10 +23,11 @@ module ReqHeaders
 		"Accept-Language" => "en-US,en;q=0.5",
 		"Content-Type" => "application/json",
 		"Cookie" => cookie,
-		"DNT" => "1",
-		"Host" => "www.ubereats.com",
+		#"DNT" => "1",
+		#"Host" => "www.ubereats.com",
 		#Origin: https://www.ubereats.com
 		"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
 		"x-csrf-token" => "x",
+		"x-uber-xps" => "%7B%7D",
 	}
 end
