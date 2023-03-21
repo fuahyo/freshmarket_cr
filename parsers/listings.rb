@@ -14,7 +14,7 @@ sections = json["data"][vars["section_id"]].each do |section|
         _collection: "sections",
         section_id: vars["section_id"],
         section_name: vars["section"]["title"],
-        sub_section_id: section["catalogSectionUUID"]
+        sub_section_id: section["catalogSectionUUID"],
         sub_section_name: payload["standardItemsPayload"]["title"]["text"],
         products_count: payload["standardItemsPayload"]["catalogItems"].count
     }
