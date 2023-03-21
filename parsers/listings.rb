@@ -6,6 +6,64 @@ PER_PAGE = 50
 json = JSON.parse(content)
 current_page = vars["page_number"]
 
+
+outputs << {
+    _collection: "products",
+    _id: prod_id,
+    competitor_name: "Rappit",
+    competitor_type: "dmart",
+    store_name: "Rappit",
+    store_id: store_id,
+    country_iso: "PH",
+    language: "ENG",
+    currency_code_lc: "PHP",
+    scraped_at_timestamp: Time.now.strftime('%Y-%m-%d %H:%M:%S'),
+    ###
+    competitor_product_id: prod_id,
+    name: prod_name,
+    brand: brand,
+    category_id: cat_id,
+    category: cat,
+    sub_category: subcat,
+    customer_price_lc: customer_price_lc,
+    base_price_lc: base_price_lc,
+    has_discount: has_discount,
+    discount_percentage: discount_percentage,
+    rank_in_listing: rank,
+    page_number: current_page,
+    product_pieces: prod_pieces,
+    size_std: size_std,
+    size_unit_std: size_unit_std,
+    description: description,#?
+    img_url: img_url,
+    barcode: barcode,
+    sku: sku,
+    url: url,
+    is_available: is_available,
+    crawled_source: "WEB",
+    is_promoted: is_promoted,
+    type_of_promotion: type_of_promotion,
+    promo_attributes: promo_attributes,
+    is_private_label: is_private_label,
+    latitude: nil,
+    longitude: nil,
+    reviews: nil,
+    store_reviews: nil,
+    item_attributes: item_attributes,
+    item_identifiers: item_identifiers,
+    country_of_origin: nil,
+    variants: nil,
+}
+
+
+
+
+
+
+
+
+
+#############
 products = json["data"]["items"]
 
 
