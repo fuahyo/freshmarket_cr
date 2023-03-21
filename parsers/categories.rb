@@ -10,7 +10,7 @@ stores = json["stores"]
 stores.each do |store_id, store|
     location = store["data"]["location"]
     seo_meta = store["data"]["seoMeta"]
-    rating = store["data"]["rating"]
+    store_rating = store["data"]["rating"]
         
     sections = store["data"]["sections"]
     sections.each do |section|
@@ -40,7 +40,7 @@ stores.each do |store_id, store|
                 section: section,
                 location: location,
                 seo_meta: seo_meta,
-                rating: rating,
+                store_rating: store_rating,
             }
         }
     end
