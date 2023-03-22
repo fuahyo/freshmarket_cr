@@ -8,13 +8,14 @@ json = JSON.parse(content)
 
 sections = json["data"][vars["section_id"]].each do |section|
     payload = section["payload"]
+    sub_section_id = section["catalogSectionUUID"]
 
     outputs << {
-        _id: "#{vars["section_id"]}_#{section["catalogSectionUUID"]}",
+        _id: "#{vars["section_id"]}_#{sub_section_id}",
         _collection: "sections",
         section_id: vars["section_id"],
         section_name: vars["section"]["title"],
-        sub_section_id: section["catalogSectionUUID"],
+        sub_section_id: sub_section_id,
         sub_section_name: payload["standardItemsPayload"]["title"]["text"],
         products_count: payload["standardItemsPayload"]["catalogItems"].count
     }
@@ -51,8 +52,14 @@ sections = json["data"][vars["section_id"]].each do |section|
         barcode = prod_id
         sku = nil
         #url = "https://www.ubereats.com/store/fresh-market-rohrmoser/mDT4exWeQC-HSjy29Ktlew/9834f87b-159e-402f-874a-3cb6f4ab657b/53d538d0-d582-53d7-affc-49408de43695?mod=quickView&modctx=%257B%2522storeUuid%2522%253A%25229834f87b-159e-402f-874a-3cb6f4ab657b%2522%252C%2522sectionUuid%2522%253A%252253d538d0-d582-53d7-affc-49408de43695%2522%252C%2522subsectionUuid%2522%253A%25226bd6af86-7a56-5e99-8810-42f0231789f0%2522%252C%2522itemUuid%2522%253A%2522ca9fcd05-4b64-5187-a3d3-0cc63502cea8%2522%257D&ps=1&scats=53d538d0-d582-53d7-affc-49408de43695&scatsubs="
-        url = "https://www.ubereats.com/store/fresh-market-rohrmoser/mDT4exWeQC-HSjy29Ktlew/9834f87b-159e-402f-874a-3cb6f4ab657b/#{cat_id}/#{prod["subsectionUuid"]}/#{prod_id}?diningMode=DELIVERY&ps=1&scats=#{cat_id}"
-
+        #url = "https://www.ubereats.com/cr-en/store/fresh-market-rohrmoser/mDT4exWeQC-HSjy29Ktlew/9834f87b-159e-402f-874a-3cb6f4ab657b/#{cat_id}/#{prod["subsectionUuid"]}/#{prod_id}?diningMode=DELIVERY&ps=1&scats=#{cat_id}"
+        
+        base_url = "https://www.ubereats.com/cr-en/store/fresh-market-rohrmoser/mDT4exWeQC-HSjy29Ktlew/9834f87b-159e-402f-874a-3cb6f4ab657b"
+        slug = '/CAT_ID?mod=quickView&modctx={"storeUuid":"STORE_ID","sectionUuid":"CAT_ID","subsectionUuid":"SUB_SECTION_ID","itemUuid":"PROD_ID"}&ps=1&scats=CAT_ID&scatsubs='
+        slug = slug.gsub("{", "%257B").gsub('"', "%2522").gsub(":", "%253A").gsub(",", "%252C").gsub("}", "%257D")
+        slug = slug.gsub("CAT_ID", cat_id).gsub("STORE_ID", store_id).gsub("SUB_SECTION_ID", sub_section_id).gsub("PROD_ID", prod_id)
+        url = "#{base_url}#{slug}"
+        
         is_available = prod["isAvailable"]
 
         is_promoted = false
@@ -63,7 +70,7 @@ sections = json["data"][vars["section_id"]].each do |section|
         longitude = vars["location"]["longitude"]
 
         store_reviews = JSON.generate({
-            num_total_reviews: "'#{vars["store_rating"]["reviewCount"]}'",
+            num_total_reviews: vars["store_rating"]["reviewCount"],
             avg_rating: vars["store_rating"]["ratingValue"],
         })
 
@@ -74,10 +81,10 @@ sections = json["data"][vars["section_id"]].each do |section|
             _id: prod_id,
             competitor_name: "FRESH MARKET",
             competitor_type: "dmart",
-            store_name: "FRESH MARKET",
+            store_name: vars["store_name"],
             store_id: store_id,
             country_iso: "CR",
-            language: "ENG",
+            language: "SPA",
             currency_code_lc: "CRC",
             scraped_at_timestamp: Time.now.strftime('%Y-%m-%d %H:%M:%S'),
             ###

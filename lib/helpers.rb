@@ -30,6 +30,7 @@ module GetFunc
 
         def Get_Pieces(x)
         	product_pieces_regex = [
+                /(\d+)\s?ud[s]?/i,
                 #
                 /(\d+)\s?per\s?pack/i,
                 /(\d+)\s?pack/i,
