@@ -46,6 +46,8 @@ sections = json["data"][vars["section_id"]].each do |section|
             discount_percentage = $1
 
             base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
+
+            prod_name = prod_name.gsub(/\d+% desc /i, "").strip
         end
 
         prod_pieces = GetFunc::Get_Pieces(prod_name)
