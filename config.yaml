@@ -8,7 +8,7 @@ parsers:
     disabled: false
   - page_type: listings
     file: ./parsers/listings.rb
-    disabled: false
+    disabled: true
 
 finisher:
   file: ./finisher/finisher.rb
