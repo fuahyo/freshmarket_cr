@@ -102,7 +102,7 @@ sections = json["data"][vars["section_id"]].each do |section|
             country_iso: "CR",
             language: "SPA",
             currency_code_lc: "CRC",
-            scraped_at_timestamp: Time.now.strftime('%Y-%m-%d %H:%M:%S'),
+            scraped_at_timestamp: (ENV['reparse'] == "1" ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
             ###
             competitor_product_id: prod_id,
             name: prod_name,
