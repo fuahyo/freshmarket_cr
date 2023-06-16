@@ -47,7 +47,7 @@ sections = json["data"][vars["section_id"]].each do |section|
             unless discount_percentage.to_f == 0.to_f
                 has_discount = true
                 base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
-                prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/desc/i, "").strip
+                prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
             end
         end
 
