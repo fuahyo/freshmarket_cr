@@ -26,7 +26,7 @@ sections = json["data"][vars["section_id"]].each do |section|
         store_id = vars["store_id"]
 
         prod_id = prod["uuid"].to_s
-        prod_name = prod["title"]
+        prod_name = prod["title"].strip
 
         brand = nil
         is_private_label = nil
@@ -41,13 +41,13 @@ sections = json["data"][vars["section_id"]].each do |section|
         has_discount = false
         discount_percentage = nil
         
-        if prod_name =~ /(\d+)%/i
+        if prod_name =~ /^(\d+)%/i
             discount_percentage = $1
 
             unless discount_percentage.to_f == 0.to_f
                 has_discount = true
                 base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
-                prod_name = prod_name.gsub("#{$1}%", "").gsub(/desc/i, "").strip
+                prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/desc/i, "").strip
             end
         end
 
