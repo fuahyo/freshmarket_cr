@@ -8,24 +8,37 @@ store_name = html.at_css("h1").text.strip
 json_text = html.at_css("#__REACT_QUERY_STATE__").text.strip.gsub('%5C', "\\").gsub('\u0022', '"')
 json = JSON.parse(json_text)
 
-#puts json_text#.gsub("=>", ":").gsub("nil", "null")
-
 query = nil
+#to get the correct json that have store details
 json["queries"].each do |jq|
     jq_check = jq["state"]["data"]["uuid"] rescue nil
 
     if jq_check
         query = jq
+        break
     end
 end
+
+#to get notified if there are errors on the json
+if query.nil?
+    raise "nil query"
+end
+
+#puts query.to_s.gsub("=>", ":").gsub("nil", "null")
 
 store_id = query["state"]["data"]["uuid"]
 location = query["state"]["data"]["location"]
 seo_meta = query["state"]["data"]["seoMeta"]
 store_rating = query["state"]["data"]["rating"]
 
+puts store_id
+puts location
+puts seo_meta
+puts store_rating
+puts ###
 
 sections = query["state"]["data"]["sections"]
+
 sections.each do |section|
     section_name = section["title"]
     section_id = section["uuid"]
@@ -37,7 +50,9 @@ sections.each do |section|
     }.to_json
 
     url = "https://www.ubereats.com/api/getCatalogItemsBySectionV1"
-
+    
+    puts body
+=begin
     pages << {
         page_type: "listings",
         url: url,
@@ -57,4 +72,5 @@ sections.each do |section|
             store_rating: store_rating,
         }
     }
+=end
 end
