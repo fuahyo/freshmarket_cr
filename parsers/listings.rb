@@ -6,7 +6,7 @@ current_page = 1
 
 json = JSON.parse(content)
 
-sections = json["data"][vars["section_id"]].each do |section|
+sections = json["data"][vars["section_id"]]&.each do |section|
     payload = section["payload"]
     sub_section_id = section["catalogSectionUUID"]
 
