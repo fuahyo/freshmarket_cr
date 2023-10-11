@@ -1,13 +1,17 @@
 require './lib/headers'
 require './lib/helpers'
-raise 'todo'
 
 vars = page["vars"]
 current_page = 1
 
 json = JSON.parse(content)
 
-sections = json["data"][vars["section_id"]]&.each do |section|
+sub_categories = json['data']['segmentedControlData']['segmentedControlItems'].filter{|x| x['uuid']}.map{|x| 
+    [x['uuid'], x['title']['richTextElements'].first['text']['text']['text']]
+}.to_h
+
+
+json["data"]['catalog']&.each do |section|
     payload = section["payload"]
     sub_section_id = section["catalogSectionUUID"]
 
@@ -34,7 +38,7 @@ sections = json["data"][vars["section_id"]]&.each do |section|
 
         cat_id = vars["section_id"]
         cat = vars["section"]["title"]
-        subcat = payload["standardItemsPayload"]["title"]["text"]
+        subcat = sub_categories[prod["subsectionUuid"]]
 
         customer_price_lc = (prod["price"] / 100.to_f)
         base_price_lc = customer_price_lc
