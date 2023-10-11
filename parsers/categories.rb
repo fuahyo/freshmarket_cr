@@ -37,7 +37,7 @@ sections.each do |section|
 
     body = {
         "pagingInfo" => {
-            "enabled" => true,
+            "enabled" => false,
             "offset" => nil,
         },
         "storeFilters": {
