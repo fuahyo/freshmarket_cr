@@ -8,7 +8,7 @@ json = JSON.parse(content)
 
 sub_categories = json['data']['segmentedControlData']['segmentedControlItems'].filter{|x| x['uuid']}.map{|x| 
     [x['uuid'], x['title']['richTextElements'].first['text']['text']['text']]
-}.to_h
+}.to_h rescue {}
 
 
 json["data"]['catalog']&.each do |section|
