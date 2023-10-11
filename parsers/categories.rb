@@ -36,12 +36,24 @@ sections.each do |section|
     section_id = section["uuid"]
 
     body = {
-        "diningMode" => "DELIVERY",
-        "sectionUUIDs" => [section_id],
-        "storeUUIDs" => [store_id],
+        "pagingInfo" => {
+            "enabled" => true,
+            "offset" => nil,
+        },
+        "storeFilters": {
+            "storeUuid": store_id,
+            "sectionUuids": [
+                section_id
+            ],
+            "subsectionUuids": nil,
+            "sectionTypes": [
+              "MENU"
+            ],
+            "shouldReturnSegmentedControlData": true
+        }
     }.to_json
 
-    url = "https://www.ubereats.com/api/getCatalogItemsBySectionV1"
+    url = "https://www.ubereats.com/_p/api/getCatalogPresentationV2?localeCode=cr-en"
 
     pages << {
         page_type: "listings",
