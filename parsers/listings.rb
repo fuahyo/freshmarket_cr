@@ -47,10 +47,12 @@ json["data"]['catalog']&.each do |section|
         discount_percentage = nil
         
         if prod_name =~ /^(\d+)%/i
-            discount_percentage = $1
+            captured_discount = $1
 
-            unless discount_percentage.to_f == 0.to_f
+            unless captured_discount.to_f == 0.to_f
                 has_discount = true
+                discount_percentage = captured_discount
+                
                 base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
                 prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
             end
