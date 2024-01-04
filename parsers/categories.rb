@@ -2,7 +2,7 @@ require './lib/headers'
 
 html = Nokogiri::HTML(content)
 
-store_name = html.at_css("h1").text.strip
+store_name = html.at_css(".fh").text.strip
 
 #json_text = html.at_css("#__REDUX_STATE__").text.strip.gsub('%5C', "\\").gsub('\u0022', '"')
 json_text = html.at_css("#__REACT_QUERY_STATE__").text.strip.gsub('%5C', "\\").gsub('\u0022', '"')
