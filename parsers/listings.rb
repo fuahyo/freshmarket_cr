@@ -40,23 +40,23 @@ json["data"]['catalog']&.each do |section|
         cat = vars["section"]["title"]
         subcat = sub_categories[prod["subsectionUuid"]]
 
-        customer_price_lc = (prod["price"] / 100.to_f)
-        base_price_lc = customer_price_lc
+        # customer_price_lc = (prod["price"] / 100.to_f)
+        # base_price_lc = customer_price_lc
 
-        has_discount = false
-        discount_percentage = nil
+        # has_discount = false
+        # discount_percentage = nil
         
-        if prod_name =~ /^(\d+)%/i
-            captured_discount = $1
+        # if prod_name =~ /^(\d+)%/i
+        #     captured_discount = $1
 
-            unless captured_discount.to_f == 0.to_f
-                has_discount = true
-                discount_percentage = captured_discount
+        #     unless captured_discount.to_f == 0.to_f
+        #         has_discount = true
+        #         discount_percentage = captured_discount
                 
-                base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
-                prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
-            end
-        end
+        #         base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
+        #         prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
+        #     end
+        # end
 
         prod_pieces = GetFunc::Get_Pieces(prod_name)
 
@@ -100,52 +100,60 @@ json["data"]['catalog']&.each do |section|
 
         item_identifiers = JSON.generate({barcode: "'#{barcode}'"})
 
-        outputs << {
-            _collection: "products",
-            _id: prod_id,
-            competitor_name: "FRESH MARKET",
-            competitor_type: "dmart",
-            store_name: vars["store_name"],
-            store_id: store_id,
-            country_iso: "CR",
-            language: "SPA",
-            currency_code_lc: "CRC",
-            scraped_at_timestamp: ((ENV['needs_reparse'] == 1 || ENV['needs_reparse'] == "1") ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
-            ###
-            competitor_product_id: prod_id,
-            name: prod_name,
-            brand: brand,
-            category_id: cat_id,
-            category: cat,
-            sub_category: subcat,
-            customer_price_lc: customer_price_lc,
-            base_price_lc: base_price_lc,
-            has_discount: has_discount,
-            discount_percentage: discount_percentage,
-            rank_in_listing: rank,
-            page_number: current_page,
-            product_pieces: prod_pieces,
-            size_std: size_std,
-            size_unit_std: size_unit_std,
-            description: description,
-            img_url: img_url,
-            barcode: barcode,
-            sku: sku,
-            url: url,
-            is_available: is_available,
-            crawled_source: "WEB",
-            is_promoted: is_promoted,
-            type_of_promotion: type_of_promotion,
-            promo_attributes: promo_attributes,
-            is_private_label: is_private_label,
-            latitude: latitude,
-            longitude: longitude,
-            reviews: nil,
-            store_reviews: store_reviews,
-            item_attributes: nil,
-            item_identifiers: item_identifiers,
-            country_of_origin: nil,
-            variants: nil,
+        product_url = "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en"
+        pages << {
+            page_type: "products",
+            url: product_url,
+            method: "POST",
+            headers: ReqHeaders::ListingsHeaders,
+            body: body, 
+            vars: {
+                _collection: "products",
+                _id: prod_id,
+                competitor_name: "FRESH MARKET",
+                competitor_type: "dmart",
+                store_name: vars["store_name"],
+                store_id: store_id,
+                country_iso: "CR",
+                language: "SPA",
+                currency_code_lc: "CRC",
+                scraped_at_timestamp: ((ENV['needs_reparse'] == 1 || ENV['needs_reparse'] == "1") ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
+                ###
+                competitor_product_id: prod_id,
+                name: prod_name,
+                brand: brand,
+                category_id: cat_id,
+                category: cat,
+                sub_category: subcat,
+                customer_price_lc: customer_price_lc,
+                # base_price_lc: base_price_lc,
+                # has_discount: has_discount,
+                # discount_percentage: discount_percentage,
+                rank_in_listing: rank,
+                page_number: current_page,
+                product_pieces: prod_pieces,
+                size_std: size_std,
+                size_unit_std: size_unit_std,
+                description: description,
+                img_url: img_url,
+                barcode: barcode,
+                sku: sku,
+                url: url,
+                is_available: is_available,
+                crawled_source: "WEB",
+                is_promoted: is_promoted,
+                type_of_promotion: type_of_promotion,
+                promo_attributes: promo_attributes,
+                is_private_label: is_private_label,
+                latitude: latitude,
+                longitude: longitude,
+                reviews: nil,
+                store_reviews: store_reviews,
+                item_attributes: nil,
+                item_identifiers: item_identifiers,
+                country_of_origin: nil,
+                variants: nil,
+            }
         }
     end
 end

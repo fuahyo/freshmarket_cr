@@ -15,12 +15,12 @@ parsers:
     file: ./parsers/listings.rb
     disabled: false
 
-finisher:
-  file: ./finisher/finisher.rb
-  disabled: true
+# finisher:
+#   file: ./finisher/finisher.rb
+#   disabled: true
 
-exporters:
-  - file: ./exporters/products_json.yaml
-    disabled: false
-  - file: ./exporters/products_csv.yaml
-    disabled: false
+# exporters:
+#   - file: ./exporters/products_json.yaml
+#     disabled: false
+#   - file: ./exporters/products_csv.yaml
+#     disabled: false
