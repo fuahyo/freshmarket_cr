@@ -25,12 +25,21 @@ json["data"]['catalog']&.each do |section|
         products_count: payload["standardItemsPayload"]["catalogItems"].count
     }
 
+    products_storeUUID = nil
+    ctaUri = payload["standardItemsPayload"]["ctaUri"]
+    if ctaUri
+        match_data = ctaUri.match(/storeUUID=([a-z0-9\-]+)/)
+        products_storeUUID = match_data[1] if match_data
+    end 
+
+
     products = payload["standardItemsPayload"]["catalogItems"]
     products.each_with_index do |prod, idx|
         rank = idx+1
         store_id = vars["store_id"]
 
         prod_id = prod["uuid"].to_s
+        prod_sectionUuid = prod["sectionUuid"].to_s
         prod_name = prod["title"].strip
 
         brand = nil
@@ -99,13 +108,21 @@ json["data"]['catalog']&.each do |section|
         })
 
         item_identifiers = JSON.generate({barcode: "'#{barcode}'"})
-
+        body = {
+            "cbType": "EATER_ENDORSED",
+            "itemRequestType": "ITEM",
+            "menuItemUuid": prod_id,
+            "sectionUuid": prod_sectionUuid,
+            "storeUuid": products_storeUUID,
+            "subsectionUuid": sub_section_id
+        }.to_json
         product_url = "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en"
+        
         pages << {
             page_type: "products",
             url: product_url,
             method: "POST",
-            headers: ReqHeaders::ListingsHeaders,
+            headers: ReqHeaders::ProductsHeaders,
             body: body, 
             vars: {
                 _collection: "products",
@@ -157,3 +174,7 @@ json["data"]['catalog']&.each do |section|
         }
     end
 end
+
+# File.open("contoh3213123.json","w") do |f|
+#     f.write(JSON.pretty_generate(pages))
+# end

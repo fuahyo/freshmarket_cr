@@ -77,6 +77,10 @@ sections.each do |section|
     }
 end
 
+# File.open("caa.json","w") do |f|
+#     f.write(JSON.pretty_generate(pages))
+# end
+
 ####
 =begin
 json = JSON.parse(content)
