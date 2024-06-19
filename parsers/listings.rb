@@ -40,23 +40,23 @@ json["data"]['catalog']&.each do |section|
         cat = vars["section"]["title"]
         subcat = sub_categories[prod["subsectionUuid"]]
 
-        # customer_price_lc = (prod["price"] / 100.to_f)
-        # base_price_lc = customer_price_lc
+        customer_price_lc = (prod["price"] / 100.to_f)
+        base_price_lc = customer_price_lc
 
-        # has_discount = false
-        # discount_percentage = nil
+        has_discount = false
+        discount_percentage = nil
         
-        # if prod_name =~ /^(\d+)%/i
-        #     captured_discount = $1
+        if prod_name =~ /^(\d+)%/i
+            captured_discount = $1
 
-        #     unless captured_discount.to_f == 0.to_f
-        #         has_discount = true
-        #         discount_percentage = captured_discount
+            unless captured_discount.to_f == 0.to_f
+                has_discount = true
+                discount_percentage = captured_discount
                 
-        #         base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
-        #         prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
-        #     end
-        # end
+                base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
+                prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
+            end
+        end
 
         prod_pieces = GetFunc::Get_Pieces(prod_name)
 
@@ -125,8 +125,8 @@ json["data"]['catalog']&.each do |section|
                 category_id: cat_id,
                 category: cat,
                 sub_category: subcat,
-                customer_price_lc: customer_price_lc,
-                # base_price_lc: base_price_lc,
+                # customer_price_lc: customer_price_lc,
+                base_price_lc: base_price_lc,
                 # has_discount: has_discount,
                 # discount_percentage: discount_percentage,
                 rank_in_listing: rank,
