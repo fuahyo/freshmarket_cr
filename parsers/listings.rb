@@ -118,7 +118,7 @@ json["data"]['catalog']&.each do |section|
         # }.to_json
         product_url = "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en"
         
-        if products_storeUUID != nil || product
+        if products_storeUUID != nil || products_storeUUID == ''
             pages << {
                 page_type: "products",
                 url: product_url,
