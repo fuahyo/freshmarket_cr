@@ -29,7 +29,6 @@ json["data"]['catalog']&.each do |section|
     ctaUri = payload["standardItemsPayload"]["ctaUri"].to_s
     if ctaUri
         match_data = ctaUri.match(/storeUUID=([a-zA-Z0-9\-]+)&sectionUUID/)
-
         products_storeUUID = match_data[1] if match_data
     end 
 
@@ -119,7 +118,7 @@ json["data"]['catalog']&.each do |section|
         # }.to_json
         product_url = "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en"
         
-        if products_storeUUID
+        if products_storeUUID != nil || product
             pages << {
                 page_type: "products",
                 url: product_url,
