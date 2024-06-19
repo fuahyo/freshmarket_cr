@@ -123,7 +123,17 @@ json["data"]['catalog']&.each do |section|
             url: product_url,
             method: "POST",
             headers: ReqHeaders::ProductsHeaders,
-            body: body, 
+            body: {
+                cbType: "EATER_ENDORSED",
+                itemRequestType: "ITEM",
+                menuItemUuid: prod_id,
+                sectionUuid: prod_sectionUuid,
+                storeUuid: products_storeUUID,
+                subsectionUuid: sub_section_id
+            },
+            driver: {
+                name: "store_id=#{store_id}&section_id=#{section_id}&section_name=#{section_name}",
+            },
             vars: {
                 _collection: "products",
                 _id: prod_id,

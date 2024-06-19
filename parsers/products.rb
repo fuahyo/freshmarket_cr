@@ -6,19 +6,30 @@ current_page = 1
 
 json = JSON.parse(content)
 
-customer_price_lc = json["data"]['price'] / 100.to_f
+customer_price_lc = json["data"]['price'].to_f / 100.to_f
 base_price_lc = vars["base_price_lc"]
-has_discount = false
+
 discount_percentage = nil
 
-if prod_name =~ /^(\d+)%/i
-    captured_discount = $1
+if customer_price_lc > base_price_lc
+    customer_price_lc = base_price_lc
+end
+has_discount = customer_price_lc != base_price_lc
 
-    unless captured_discount.to_f == 0.to_f
-        has_discount = true
-        discount_percentage = captured_discount
-        
-        base_price_lc = (customer_price_lc / (1 - (discount_percentage.to_f/100.to_f))).round
-        prod_name = prod_name.gsub(/^(\d+)%/i, "").strip.gsub(/^desc/i, "").strip
-    end
+discount_percentage = has_discount ? ((base_price_lc.to_f - customer_price_lc.to_f)/(base_price_lc.to_f) * 100).to_f.round(7) : nil
+
+
+output = vars.merge({
+    "customer_price_lc" => customer_price_lc,
+    "has_discount" => has_discount,
+    "discount_percentage" => discount_percentage,
+})
+
+outputs << output
+
+File.open("qweqwe.json","w") do |f|
+    f.write(JSON.pretty_generate(outputs))
+end
+File.open("json.json","w") do |f|
+    f.write(JSON.pretty_generate(json))
 end
