@@ -1,7 +1,7 @@
-# env_vars:
-#  - name: needs_reparse
-# input_vars:
-#  - name: needs_reparse
+env_vars:
+ - name: needs_reparse
+input_vars:
+ - name: needs_reparse
 
 seeder:
   file: ./seeder/seeder.rb
@@ -18,12 +18,12 @@ parsers:
     file: ./parsers/products.rb
     disabled: false
 
-# finisher:
-#   file: ./finisher/finisher.rb
-#   disabled: true
+finisher:
+  file: ./finisher/finisher.rb
+  disabled: true
 
-# exporters:
-#   - file: ./exporters/products_json.yaml
-#     disabled: false
-#   - file: ./exporters/products_csv.yaml
-#     disabled: false
+exporters:
+  - file: ./exporters/products_json.yaml
+    disabled: false
+  - file: ./exporters/products_csv.yaml
+    disabled: false
