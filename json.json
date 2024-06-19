@@ -1,7 +1,0 @@
-{
-  "status": "failure",
-  "data": {
-    "message": "invalid_uuid",
-    "code": "404"
-  }
-}
