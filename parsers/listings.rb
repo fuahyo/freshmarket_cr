@@ -3,7 +3,7 @@ require './lib/helpers'
 
 vars = page["vars"]
 current_page = 1
-
+# json_file = File.read('./xxx.json')
 json = JSON.parse(content)
 
 sub_categories = json['data']['segmentedControlData']['segmentedControlItems'].filter{|x| x['uuid']}.map{|x| 
@@ -26,12 +26,12 @@ json["data"]['catalog']&.each do |section|
     }
 
     products_storeUUID = nil
-    ctaUri = payload["standardItemsPayload"]["ctaUri"]
+    ctaUri = payload["standardItemsPayload"]["ctaUri"].to_s
     if ctaUri
-        match_data = ctaUri.match(/storeUUID=([a-z0-9\-]+)/)
+        match_data = ctaUri.match(/storeUUID=([a-zA-Z0-9\-]+)&sectionUUID/)
+
         products_storeUUID = match_data[1] if match_data
     end 
-
 
     products = payload["standardItemsPayload"]["catalogItems"]
     products.each_with_index do |prod, idx|
@@ -46,6 +46,7 @@ json["data"]['catalog']&.each do |section|
         is_private_label = nil
 
         cat_id = vars["section_id"]
+        cat_name = vars["section"]["title"]
         cat = vars["section"]["title"]
         subcat = sub_categories[prod["subsectionUuid"]]
 
@@ -108,83 +109,137 @@ json["data"]['catalog']&.each do |section|
         })
 
         item_identifiers = JSON.generate({barcode: "'#{barcode}'"})
-        body = {
-            "cbType": "EATER_ENDORSED",
-            "itemRequestType": "ITEM",
-            "menuItemUuid": prod_id,
-            "sectionUuid": prod_sectionUuid,
-            "storeUuid": products_storeUUID,
-            "subsectionUuid": sub_section_id
-        }.to_json
+        # body = {
+        #     "cbType": "EATER_ENDORSED",
+        #     "itemRequestType": "ITEM",
+        #     "menuItemUuid": prod_id,
+        #     "sectionUuid": prod_sectionUuid,
+        #     "storeUuid": products_storeUUID,
+        #     "subsectionUuid": sub_section_id
+        # }.to_json
         product_url = "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en"
         
-        pages << {
-            page_type: "products",
-            url: product_url,
-            method: "POST",
-            headers: ReqHeaders::ProductsHeaders,
-            body: {
-                cbType: "EATER_ENDORSED",
-                itemRequestType: "ITEM",
-                menuItemUuid: prod_id,
-                sectionUuid: prod_sectionUuid,
-                storeUuid: products_storeUUID,
-                subsectionUuid: sub_section_id
-            },
-            driver: {
-                name: "store_id=#{store_id}&section_id=#{section_id}&section_name=#{section_name}",
-            },
-            vars: {
-                _collection: "products",
-                _id: prod_id,
-                competitor_name: "FRESH MARKET",
-                competitor_type: "dmart",
-                store_name: vars["store_name"],
-                store_id: store_id,
-                country_iso: "CR",
-                language: "SPA",
-                currency_code_lc: "CRC",
-                scraped_at_timestamp: ((ENV['needs_reparse'] == 1 || ENV['needs_reparse'] == "1") ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
-                ###
-                competitor_product_id: prod_id,
-                name: prod_name,
-                brand: brand,
-                category_id: cat_id,
-                category: cat,
-                sub_category: subcat,
-                # customer_price_lc: customer_price_lc,
-                base_price_lc: base_price_lc,
-                # has_discount: has_discount,
-                # discount_percentage: discount_percentage,
-                rank_in_listing: rank,
-                page_number: current_page,
-                product_pieces: prod_pieces,
-                size_std: size_std,
-                size_unit_std: size_unit_std,
-                description: description,
-                img_url: img_url,
-                barcode: barcode,
-                sku: sku,
-                url: url,
-                is_available: is_available,
-                crawled_source: "WEB",
-                is_promoted: is_promoted,
-                type_of_promotion: type_of_promotion,
-                promo_attributes: promo_attributes,
-                is_private_label: is_private_label,
-                latitude: latitude,
-                longitude: longitude,
-                reviews: nil,
-                store_reviews: store_reviews,
-                item_attributes: nil,
-                item_identifiers: item_identifiers,
-                country_of_origin: nil,
-                variants: nil,
+        if products_storeUUID
+            pages << {
+                page_type: "products",
+                url: product_url,
+                method: "POST",
+                headers: ReqHeaders::ProductsHeaders,
+                body: {
+                    cbType: "EATER_ENDORSED",
+                    itemRequestType: "ITEM",
+                    menuItemUuid: prod_id,
+                    sectionUuid: prod_sectionUuid,
+                    storeUuid: products_storeUUID,
+                    subsectionUuid: sub_section_id
+                },
+                driver: {
+                    name: "store_id=#{store_id}&section_id=#{cat_id}&section_name=#{cat_name}",
+                },
+                vars: {
+                    _collection: "products",
+                    _id: prod_id, 
+                    competitor_name: "FRESH MARKET",
+                    competitor_type: "dmart",
+                    store_name: vars["store_name"],
+                    store_id: store_id,
+                    country_iso: "CR",
+                    language: "SPA",
+                    currency_code_lc: "CRC",
+                    scraped_at_timestamp: ((ENV['needs_reparse'] == 1 || ENV['needs_reparse'] == "1") ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
+                    ###
+                    competitor_product_id: prod_id,
+                    name: prod_name,
+                    brand: brand,
+                    category_id: cat_id,
+                    category: cat,
+                    sub_category: subcat,
+                    # customer_price_lc: customer_price_lc,
+                    base_price_lc: base_price_lc,
+                    # has_discount: has_discount,
+                    # discount_percentage: discount_percentage,
+                    rank_in_listing: rank,
+                    page_number: current_page,
+                    product_pieces: prod_pieces,
+                    size_std: size_std,
+                    size_unit_std: size_unit_std,
+                    description: description,
+                    img_url: img_url,
+                    barcode: barcode,
+                    sku: sku,
+                    url: url,
+                    is_available: is_available,
+                    crawled_source: "WEB",
+                    is_promoted: is_promoted,
+                    type_of_promotion: type_of_promotion,
+                    promo_attributes: promo_attributes,
+                    is_private_label: is_private_label,
+                    latitude: latitude,
+                    longitude: longitude,
+                    reviews: nil,
+                    store_reviews: store_reviews,
+                    item_attributes: nil,
+                    item_identifiers: item_identifiers,
+                    country_of_origin: nil,
+                    variants: nil,
+                }
             }
+        else
+            outputs << {
+            _collection: "products",
+            _id: prod_id,
+            competitor_name: "FRESH MARKET",
+            competitor_type: "dmart",
+            store_name: vars["store_name"],
+            store_id: store_id,
+            country_iso: "CR",
+            language: "SPA",
+            currency_code_lc: "CRC",
+            scraped_at_timestamp: ((ENV['needs_reparse'] == 1 || ENV['needs_reparse'] == "1") ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
+            ###
+            competitor_product_id: prod_id,
+            name: prod_name,
+            brand: brand,
+            category_id: cat_id,
+            category: cat,
+            sub_category: subcat,
+            customer_price_lc: customer_price_lc,
+            base_price_lc: base_price_lc,
+            has_discount: has_discount,
+            discount_percentage: discount_percentage,
+            rank_in_listing: rank,
+            page_number: current_page,
+            product_pieces: prod_pieces,
+            size_std: size_std,
+            size_unit_std: size_unit_std,
+            description: description,
+            img_url: img_url,
+            barcode: barcode,
+            sku: sku,
+            url: url,
+            is_available: is_available,
+            crawled_source: "WEB",
+            is_promoted: is_promoted,
+            type_of_promotion: type_of_promotion,
+            promo_attributes: promo_attributes,
+            is_private_label: is_private_label,
+            latitude: latitude,
+            longitude: longitude,
+            reviews: nil,
+            store_reviews: store_reviews,
+            item_attributes: nil,
+            item_identifiers: item_identifiers,
+            country_of_origin: nil,
+            variants: nil,
         }
+
+        end
     end
 end
 
-# File.open("contoh3213123.json","w") do |f|
+# File.open("page.json","w") do |f|
 #     f.write(JSON.pretty_generate(pages))
+# end
+# File.open("output.json","w") do |f|
+#     f.write(JSON.pretty_generate(outputs))
 # end
