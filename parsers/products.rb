@@ -1,9 +1,7 @@
 require './lib/headers'
 require './lib/helpers'
 
-vars = page["vars"]
-body = page
-headers = page
+vars = page["vars"] 
 current_page = 1
 
 json = JSON.parse(content)
@@ -32,12 +30,15 @@ outputs << output
 # File.open("qweqwe.json","w") do |f|
 #     f.write(JSON.pretty_generate(outputs))
 # end
-File.open("json.json","w") do |f|
-    f.write(JSON.pretty_generate(json))
-end
-File.open("body.json","w") do |f|
-    f.write(JSON.pretty_generate(body))
-end
-File.open("headers.json","w") do |f|
-    f.write(JSON.pretty_generate(headers))
-end
+# File.open("json.json","w") do |f|
+#     f.write(JSON.pretty_generate(json))
+# end
+# File.open("body.json","w") do |f|
+#     f.write(JSON.pretty_generate(body))
+# end
+# File.open("headers.json","w") do |f|
+#     f.write(JSON.pretty_generate(headers))
+# end
+# File.open("vars.json","w") do |f|
+#     f.write(JSON.pretty_generate(vars))
+# end
