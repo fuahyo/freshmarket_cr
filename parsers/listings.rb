@@ -116,27 +116,25 @@ json["data"]['catalog']&.each do |section|
         #     "storeUuid": products_storeUUID,
         #     "subsectionUuid": sub_section_id
         # }.to_json 
+        bodyProduct = {
+                "cbType" => "EATER_ENDORSED",
+                "itemRequestType" => "ITEM",
+                "menuItemUuid" => prod_id,
+                "sectionUuid" => prod_sectionUuid,
+                "storeUuid" => products_storeUUID,
+                "subsectionUuid" => sub_section_id
+        }.to_json
         
         if (products_storeUUID != nil || products_storeUUID == '') && prod_id
             pages << {
                 page_type: "products",
                 url: "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en",
-                method: "POST",
-                products_storeUUID: products_storeUUID,
+                method: "POST",             
                 headers: ReqHeaders::ProductsHeaders,
-                body: {
-                    cbType: "EATER_ENDORSED",
-                    itemRequestType: "ITEM",
-                    menuItemUuid: prod_id,
-                    sectionUuid: prod_sectionUuid,
-                    storeUuid: products_storeUUID,
-                    subsectionUuid: sub_section_id
-                },
-                # driver: {
-                #     name: "store_id=#{store_id}&section_id=#{cat_id}&section_name=#{cat_name}",
-                # },
+                body: bodyProduct, 
                 vars: {
                     _collection: "products",
+                    products_storeUUID: products_storeUUID,
                     _id: prod_id, 
                     competitor_name: "FRESH MARKET",
                     competitor_type: "dmart",
