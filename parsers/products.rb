@@ -30,6 +30,6 @@ outputs << output
 # File.open("qweqwe.json","w") do |f|
 #     f.write(JSON.pretty_generate(outputs))
 # end
-# File.open("json.json","w") do |f|
-#     f.write(JSON.pretty_generate(json))
-# end
+File.open("json.json","w") do |f|
+    f.write(JSON.pretty_generate(json))
+end

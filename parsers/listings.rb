@@ -115,14 +115,14 @@ json["data"]['catalog']&.each do |section|
         #     "sectionUuid": prod_sectionUuid,
         #     "storeUuid": products_storeUUID,
         #     "subsectionUuid": sub_section_id
-        # }.to_json
-        product_url = "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en"
+        # }.to_json 
         
-        if products_storeUUID != nil || products_storeUUID == ''
+        if (products_storeUUID != nil || products_storeUUID == '') && prod_id
             pages << {
                 page_type: "products",
-                url: product_url,
+                url: "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en",
                 method: "POST",
+                products_storeUUID: products_storeUUID,
                 headers: ReqHeaders::ProductsHeaders,
                 body: {
                     cbType: "EATER_ENDORSED",
@@ -132,9 +132,9 @@ json["data"]['catalog']&.each do |section|
                     storeUuid: products_storeUUID,
                     subsectionUuid: sub_section_id
                 },
-                driver: {
-                    name: "store_id=#{store_id}&section_id=#{cat_id}&section_name=#{cat_name}",
-                },
+                # driver: {
+                #     name: "store_id=#{store_id}&section_id=#{cat_id}&section_name=#{cat_name}",
+                # },
                 vars: {
                     _collection: "products",
                     _id: prod_id, 
@@ -236,9 +236,9 @@ json["data"]['catalog']&.each do |section|
     end
 end
 
-File.open("page.json","w") do |f|
-    f.write(JSON.pretty_generate(pages))
-end
-File.open("output.json","w") do |f|
-    f.write(JSON.pretty_generate(outputs))
-end
+# File.open("page.json","w") do |f|
+#     f.write(JSON.pretty_generate(pages))
+# end
+# File.open("output.json","w") do |f|
+#     f.write(JSON.pretty_generate(outputs))
+# end
