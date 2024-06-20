@@ -185,7 +185,7 @@ json["data"]['catalog']&.each do |section|
             }
         else
             outputs << {
-                _collection: "products",
+                _collection: "products",    
                 _id: prod_id,
                 competitor_name: "FRESH MARKET",
                 competitor_type: "dmart",
@@ -236,9 +236,9 @@ json["data"]['catalog']&.each do |section|
     end
 end
 
-# File.open("page.json","w") do |f|
-#     f.write(JSON.pretty_generate(pages))
-# end
-# File.open("output.json","w") do |f|
-#     f.write(JSON.pretty_generate(outputs))
-# end
+File.open("page.json","w") do |f|
+    f.write(JSON.pretty_generate(pages))
+end
+File.open("output.json","w") do |f|
+    f.write(JSON.pretty_generate(outputs))
+end
