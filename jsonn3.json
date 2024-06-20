@@ -1,0 +1,2954 @@
+{
+  "status": "success",
+  "data": {
+    "catalog": [
+      {
+        "type": "VERTICAL_GRID",
+        "catalogSectionUUID": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+        "payload": {
+          "standardItemsPayload": {
+            "title": {
+              "text": "Medicinas"
+            },
+            "spanCount": 2,
+            "catalogItems": [
+              {
+                "uuid": "deb1298b-e914-59ce-9e28-50908590ad75",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/678c197036b51558f295f605a0db3330/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Bayer dorival ibuprofeno cápsulas 200 mg (12 un)",
+                "itemDescription": "Cápsulas de gelatina blanda.\nLaboratorio: Bayer.",
+                "price": 420000,
+                "priceTagline": {
+                  "text": "GHS 4,200.00",
+                  "textFormat": "<span>GHS 4,200.00</span>",
+                  "accessibilityText": "GHS 4,200.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Bayer dorival ibuprofeno cápsulas 200 mg (12 un)",
+                  "textFormat": "<span>Bayer dorival ibuprofeno cápsulas 200 mg (12 un)</span>",
+                  "accessibilityText": "Bayer dorival ibuprofeno cápsulas 200 mg (12 un)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Cápsulas de gelatina blanda.\nLaboratorio: Bayer.",
+                  "textFormat": "<span style=\"color:#757575\">Cápsulas de gelatina blanda.\nLaboratorio: Bayer.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 420000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 4,200.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 4,200.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Bayer dorival ibuprofeno cápsulas 200 mg (12 un)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Bayer dorival ibuprofeno cápsulas 200 mg (12 un)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "3968d0e0-0143-5ca5-bd53-9930ed9a7e31",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/582aff4c698c2e3926ff97b119b20bba/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Cebión vitamina c tabletas 500 mg (naranja) (12 un)",
+                "itemDescription": "Tabletas masticables.\nLaboratorio: Cebión.",
+                "price": 181500,
+                "priceTagline": {
+                  "text": "GHS 1,815.00",
+                  "textFormat": "<span>GHS 1,815.00</span>",
+                  "accessibilityText": "GHS 1,815.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Cebión vitamina c tabletas 500 mg (naranja) (12 un)",
+                  "textFormat": "<span>Cebión vitamina c tabletas 500 mg (naranja) (12 un)</span>",
+                  "accessibilityText": "Cebión vitamina c tabletas 500 mg (naranja) (12 un)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Tabletas masticables.\nLaboratorio: Cebión.",
+                  "textFormat": "<span style=\"color:#757575\">Tabletas masticables.\nLaboratorio: Cebión.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 181500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 1,815.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 1,815.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Cebión vitamina c tabletas 500 mg (naranja) (12 un)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Cebión vitamina c tabletas 500 mg (naranja) (12 un)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "05d4122b-b150-5cb6-9e47-b70ee8f45aa5",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c92dfcf95693a0a1152daa10e2495b34/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Cofal ungüento fuerte (120 g)",
+                "price": 547500,
+                "priceTagline": {
+                  "text": "GHS 5,475.00",
+                  "textFormat": "<span>GHS 5,475.00</span>",
+                  "accessibilityText": "GHS 5,475.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Cofal ungüento fuerte (120 g)",
+                  "textFormat": "<span>Cofal ungüento fuerte (120 g)</span>",
+                  "accessibilityText": "Cofal ungüento fuerte (120 g)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 547500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 5,475.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 5,475.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Cofal ungüento fuerte (120 g)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Cofal ungüento fuerte (120 g)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "120 g",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "120 g"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "030d9139-a94e-5a8d-a890-ef109fed4819",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/e6a40380565ead01211fc310791db1a2/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gex antigripal noche con vitamina c (5 un)",
+                "itemDescription": "Laboratorio: Lacofa.",
+                "price": 135500,
+                "priceTagline": {
+                  "text": "GHS 1,355.00",
+                  "textFormat": "<span>GHS 1,355.00</span>",
+                  "accessibilityText": "GHS 1,355.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gex antigripal noche con vitamina c (5 un)",
+                  "textFormat": "<span>Gex antigripal noche con vitamina c (5 un)</span>",
+                  "accessibilityText": "Gex antigripal noche con vitamina c (5 un)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Laboratorio: Lacofa.",
+                  "textFormat": "<span style=\"color:#757575\">Laboratorio: Lacofa.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 135500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 1,355.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 1,355.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gex antigripal noche con vitamina c (5 un)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gex antigripal noche con vitamina c (5 un)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "eebf66d4-f1ad-5291-807d-b1909774fd42",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/b6e84606041ea6847e0e7634ec0a01aa/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gsk panadol acetaminofén 500 mg/5 mg/2 mg sinus (16 un)",
+                "itemDescription": "Laboratorio: gsk.",
+                "price": 331000,
+                "priceTagline": {
+                  "text": "GHS 3,310.00",
+                  "textFormat": "<span>GHS 3,310.00</span>",
+                  "accessibilityText": "GHS 3,310.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gsk panadol acetaminofén 500 mg/5 mg/2 mg sinus (16 un)",
+                  "textFormat": "<span>Gsk panadol acetaminofén 500 mg/5 mg/2 mg sinus (16 un)</span>",
+                  "accessibilityText": "Gsk panadol acetaminofén 500 mg/5 mg/2 mg sinus (16 un)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Laboratorio: gsk.",
+                  "textFormat": "<span style=\"color:#757575\">Laboratorio: gsk.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 331000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 3,310.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 3,310.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gsk panadol acetaminofén 500 mg/5 mg/2 mg sinus (16 un)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gsk panadol acetaminofén 500 mg/5 mg/2 mg sinus (16 un)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "bc31a326-edb8-54ff-915b-8783ea819421",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/2047217a613f6861e843de6e13295887/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gsk panadol multisíntomas",
+                "price": 346500,
+                "priceTagline": {
+                  "text": "GHS 3,465.00",
+                  "textFormat": "<span>GHS 3,465.00</span>",
+                  "accessibilityText": "GHS 3,465.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gsk panadol multisíntomas",
+                  "textFormat": "<span>Gsk panadol multisíntomas</span>",
+                  "accessibilityText": "Gsk panadol multisíntomas"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 346500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 3,465.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 3,465.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gsk panadol multisíntomas",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gsk panadol multisíntomas"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "f8118d9a-8e42-5fde-acf2-5d8bc49f5f35",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/bf535d4771691f01f9f1bff18e17d15c/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gsk panadol ultra acetaminofén cafeína tabletas 500 mg/65 mg (16 un)",
+                "itemDescription": "Panadol ultra acetaminofén 500 mg, cafeína 65 mg. Caja con 16 tabletas.\nLaboratorio: gsk.",
+                "price": 221000,
+                "priceTagline": {
+                  "text": "GHS 2,210.00",
+                  "textFormat": "<span>GHS 2,210.00</span>",
+                  "accessibilityText": "GHS 2,210.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gsk panadol ultra acetaminofén cafeína tabletas 500 mg/65 mg (16 un)",
+                  "textFormat": "<span>Gsk panadol ultra acetaminofén cafeína tabletas 500 mg/65 mg (16 un)</span>",
+                  "accessibilityText": "Gsk panadol ultra acetaminofén cafeína tabletas 500 mg/65 mg (16 un)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Panadol ultra acetaminofén 500 mg, cafeína 65 mg. Caja con 16 tabletas.\nLaboratorio: gsk.",
+                  "textFormat": "<span style=\"color:#757575\">Panadol ultra acetaminofén 500 mg, cafeína 65 mg. Caja con 16 tabletas.\nLaboratorio: gsk.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 221000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 2,210.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 2,210.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gsk panadol ultra acetaminofén cafeína tabletas 500 mg/65 mg (16 un)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gsk panadol ultra acetaminofén cafeína tabletas 500 mg/65 mg (16 un)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "ef190983-8658-5a41-a545-2a747b80eaa3",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/48b318e93030f3253a373962d464ee53/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gsk sal andrew polvo efervescente limón",
+                "itemDescription": "Laboratorio: gsk.",
+                "price": 221000,
+                "priceTagline": {
+                  "text": "GHS 2,210.00",
+                  "textFormat": "<span>GHS 2,210.00</span>",
+                  "accessibilityText": "GHS 2,210.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gsk sal andrew polvo efervescente limón",
+                  "textFormat": "<span>Gsk sal andrew polvo efervescente limón</span>",
+                  "accessibilityText": "Gsk sal andrew polvo efervescente limón"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Laboratorio: gsk.",
+                  "textFormat": "<span style=\"color:#757575\">Laboratorio: gsk.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 221000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 2,210.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 2,210.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gsk sal andrew polvo efervescente limón",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gsk sal andrew polvo efervescente limón"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "cc56c6d4-bec1-5221-af8c-a60a5f70d2e1",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/9765996702294a8f9e13ebd777e677c2/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gsk sal andrews original",
+                "price": 221000,
+                "priceTagline": {
+                  "text": "GHS 2,210.00",
+                  "textFormat": "<span>GHS 2,210.00</span>",
+                  "accessibilityText": "GHS 2,210.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gsk sal andrews original",
+                  "textFormat": "<span>Gsk sal andrews original</span>",
+                  "accessibilityText": "Gsk sal andrews original"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 221000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 2,210.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 2,210.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gsk sal andrews original",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gsk sal andrews original"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "50 g",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "50 g"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "06a8cc54-4d64-5c27-803e-a10a244dcf68",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/971fbb9af467d6718d546486e83b04c0/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Gsk sal andrews polvo efervescente (naranja) (12 un)",
+                "itemDescription": "Laboratorio: gsk.",
+                "price": 220000,
+                "priceTagline": {
+                  "text": "GHS 2,200.00",
+                  "textFormat": "<span>GHS 2,200.00</span>",
+                  "accessibilityText": "GHS 2,200.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Gsk sal andrews polvo efervescente (naranja) (12 un)",
+                  "textFormat": "<span>Gsk sal andrews polvo efervescente (naranja) (12 un)</span>",
+                  "accessibilityText": "Gsk sal andrews polvo efervescente (naranja) (12 un)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Laboratorio: gsk.",
+                  "textFormat": "<span style=\"color:#757575\">Laboratorio: gsk.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 220000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 2,200.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 2,200.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Gsk sal andrews polvo efervescente (naranja) (12 un)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Gsk sal andrews polvo efervescente (naranja) (12 un)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "6cdd81e6-8bde-57d1-8f24-0929864f903a",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/528bb233bf44fafb5aff17619ba270cf/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Janssen visine tetrizolina 0.05% (frasco 15 ml)",
+                "price": 435500,
+                "priceTagline": {
+                  "text": "GHS 4,355.00",
+                  "textFormat": "<span>GHS 4,355.00</span>",
+                  "accessibilityText": "GHS 4,355.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Janssen visine tetrizolina 0.05% (frasco 15 ml)",
+                  "textFormat": "<span>Janssen visine tetrizolina 0.05% (frasco 15 ml)</span>",
+                  "accessibilityText": "Janssen visine tetrizolina 0.05% (frasco 15 ml)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 435500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 4,355.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 4,355.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Janssen visine tetrizolina 0.05% (frasco 15 ml)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Janssen visine tetrizolina 0.05% (frasco 15 ml)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "15 g",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "15 g"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "9398b46f-3d08-5344-8b65-b5f4be3e2511",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5b33d7742c2ac8c01eb89cd5ac46752d/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Panadol acetaminofén 500 mg/5 mg/2 mg noche (16 cápsulas)",
+                "itemDescription": "Acetaminofén 500 mg, clorhidrato de fenilefrina 5 mg, maleato de clorfeniramina 2 mg.\nLaboratorio: gsk.",
+                "price": 311500,
+                "priceTagline": {
+                  "text": "GHS 3,115.00",
+                  "textFormat": "<span>GHS 3,115.00</span>",
+                  "accessibilityText": "GHS 3,115.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Panadol acetaminofén 500 mg/5 mg/2 mg noche (16 cápsulas)",
+                  "textFormat": "<span>Panadol acetaminofén 500 mg/5 mg/2 mg noche (16 cápsulas)</span>",
+                  "accessibilityText": "Panadol acetaminofén 500 mg/5 mg/2 mg noche (16 cápsulas)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Acetaminofén 500 mg, clorhidrato de fenilefrina 5 mg, maleato de clorfeniramina 2 mg.\nLaboratorio: gsk.",
+                  "textFormat": "<span style=\"color:#757575\">Acetaminofén 500 mg, clorhidrato de fenilefrina 5 mg, maleato de clorfeniramina 2 mg.\nLaboratorio: gsk.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 311500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 3,115.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 3,115.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Panadol acetaminofén 500 mg/5 mg/2 mg noche (16 cápsulas)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Panadol acetaminofén 500 mg/5 mg/2 mg noche (16 cápsulas)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "e909b608-2ae4-5dd5-8f29-1a60930285aa",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/6b6cb26f216bf5b23b03d91ea182f48c/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Panadol acetominofén 100 mg/1 ml niños (15 ml)",
+                "itemDescription": "Laboratorio: Gsk.",
+                "price": 311500,
+                "priceTagline": {
+                  "text": "GHS 3,115.00",
+                  "textFormat": "<span>GHS 3,115.00</span>",
+                  "accessibilityText": "GHS 3,115.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Panadol acetominofén 100 mg/1 ml niños (15 ml)",
+                  "textFormat": "<span>Panadol acetominofén 100 mg/1 ml niños (15 ml)</span>",
+                  "accessibilityText": "Panadol acetominofén 100 mg/1 ml niños (15 ml)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "itemDescriptionBadge": {
+                  "text": "Laboratorio: Gsk.",
+                  "textFormat": "<span style=\"color:#757575\">Laboratorio: Gsk.</span>"
+                },
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 311500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 3,115.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 3,115.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Panadol acetominofén 100 mg/1 ml niños (15 ml)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Panadol acetominofén 100 mg/1 ml niños (15 ml)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "15 ml",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "15 ml"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "46987293-1e30-5f23-9dd2-830a2338593f",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/8c624eabce951d0fc24e5531669b84ce/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Phillips leche magnesia (120 ml)",
+                "price": 290000,
+                "priceTagline": {
+                  "text": "GHS 2,900.00",
+                  "textFormat": "<span>GHS 2,900.00</span>",
+                  "accessibilityText": "GHS 2,900.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Phillips leche magnesia (120 ml)",
+                  "textFormat": "<span>Phillips leche magnesia (120 ml)</span>",
+                  "accessibilityText": "Phillips leche magnesia (120 ml)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 290000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 2,900.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 2,900.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Phillips leche magnesia (120 ml)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Phillips leche magnesia (120 ml)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "120 ml",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "120 ml"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "b7f1378d-b885-562f-90a2-f50519a00fc1",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/0930cb295727b0c7fbdb0004d3d4cc7e/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Tabletas Panadol Día Caja 16 Uds",
+                "price": 305000,
+                "priceTagline": {
+                  "text": "GHS 3,050.00",
+                  "textFormat": "<span>GHS 3,050.00</span>",
+                  "accessibilityText": "GHS 3,050.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Tabletas Panadol Día Caja 16 Uds",
+                  "textFormat": "<span>Tabletas Panadol Día Caja 16 Uds</span>",
+                  "accessibilityText": "Tabletas Panadol Día Caja 16 Uds"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 305000,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 3,050.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 3,050.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Tabletas Panadol Día Caja 16 Uds",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Tabletas Panadol Día Caja 16 Uds"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "943c0617-83f0-5adb-a8db-f3c006cfe281",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/66a02ea374e297b8789f9112f38ecb18/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Tums carbonato de calcio 750 mg extra fuerte",
+                "price": 395500,
+                "priceTagline": {
+                  "text": "GHS 3,955.00",
+                  "textFormat": "<span>GHS 3,955.00</span>",
+                  "accessibilityText": "GHS 3,955.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Tums carbonato de calcio 750 mg extra fuerte",
+                  "textFormat": "<span>Tums carbonato de calcio 750 mg extra fuerte</span>",
+                  "accessibilityText": "Tums carbonato de calcio 750 mg extra fuerte"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 395500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 3,955.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 3,955.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Tums carbonato de calcio 750 mg extra fuerte",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Tums carbonato de calcio 750 mg extra fuerte"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              },
+              {
+                "uuid": "a176b5cc-a7bb-524b-98da-c9ecf928ea81",
+                "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/54915410c7a490b491790c5f98d61dfb/0e5313be7a8831b8ed60f8dab3c2df10.jpeg",
+                "title": "Tylenol paracetamol 500 mg (20 tabletas)",
+                "price": 288500,
+                "priceTagline": {
+                  "text": "GHS 2,885.00",
+                  "textFormat": "<span>GHS 2,885.00</span>",
+                  "accessibilityText": "GHS 2,885.00"
+                },
+                "spanCount": 1,
+                "displayType": "GRID",
+                "titleBadge": {
+                  "text": "Tylenol paracetamol 500 mg (20 tabletas)",
+                  "textFormat": "<span>Tylenol paracetamol 500 mg (20 tabletas)</span>",
+                  "accessibilityText": "Tylenol paracetamol 500 mg (20 tabletas)"
+                },
+                "hasCustomizations": false,
+                "numAlcoholicItems": 0,
+                "subsectionUuid": "98b8248a-f7ca-5059-a0a2-348f4306bffb",
+                "isAvailable": true,
+                "purchaseInfo": {
+                  "purchaseOptions": [
+                    {
+                      "soldByUnit": {
+                        "measurementType": "MEASUREMENT_TYPE_COUNT"
+                      },
+                      "itemQuantityAbbreviation": "",
+                      "quantityConstraintsV2": {
+                        "minPermitted": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "maxPermitted": {
+                          "base": 25000000,
+                          "exponent": -5
+                        },
+                        "increment": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "defaultQuantity": {
+                          "base": 100000,
+                          "exponent": -5
+                        },
+                        "minPermittedNumber": 1,
+                        "maxPermittedNumber": 250,
+                        "incrementNumber": 1,
+                        "defaultQuantityNumber": 1
+                      },
+                      "purchasePriceV2": {
+                        "base": {
+                          "high": 0,
+                          "low": 288500,
+                          "unsigned": false
+                        },
+                        "exponent": -2
+                      },
+                      "pricedByToSoldByUnitConversionInfo": {
+                        "conversionRate": {
+                          "base": {
+                            "high": 0,
+                            "low": 100000,
+                            "unsigned": false
+                          },
+                          "exponent": -5
+                        }
+                      }
+                    }
+                  ],
+                  "pricingInfo": {
+                    "pricedByUnit": {
+                      "measurementType": "MEASUREMENT_TYPE_COUNT"
+                    }
+                  }
+                },
+                "sectionUuid": "b61f141e-101c-58aa-8497-5c0a7861ae17",
+                "quickAddConfig": {
+                  "shouldShow": true,
+                  "isInteractionEnabled": true,
+                  "position": "BOTTOM_TRAILING"
+                },
+                "imageOverlayElements": [
+
+                ],
+                "itemThumbnailElements": [
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "CRC 2,885.00",
+                                  "font": {
+                                    "style": "LABEL_SMALL",
+                                    "weight": "MEDIUM"
+                                  },
+                                  "color": "CONTENT_PRIMARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "CRC 2,885.00"
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "Tylenol paracetamol 500 mg (20 tabletas)",
+                                  "font": {
+                                    "style": "PARAGRAPH_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": "Tylenol paracetamol 500 mg (20 tabletas)"
+                        },
+                        "maxLines": 2
+                      },
+                      "type": "labelPayload"
+                    }
+                  },
+                  {
+                    "payload": {
+                      "labelPayload": {
+                        "label": {
+                          "richTextElements": [
+                            {
+                              "text": {
+                                "text": {
+                                  "text": "",
+                                  "font": {
+                                    "style": "PARAGRAPH_X_SMALL",
+                                    "weight": "NORMAL"
+                                  },
+                                  "color": "CONTENT_SECONDARY"
+                                },
+                                "predefinedDecorations": null
+                              },
+                              "type": "text"
+                            }
+                          ],
+                          "accessibilityText": ""
+                        },
+                        "maxLines": 3
+                      },
+                      "type": "labelPayload"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sectionUUID": "",
+            "catalogSectionAnalyticsData": {
+              "catalogSectionPosition": 0,
+              "storeSectionType": "MENU"
+            },
+            "scores": null
+          },
+          "type": "standardItemsPayload"
+        }
+      }
+    ],
+    "pagingInfo": {
+      "hasMore": false
+    },
+    "segmentedControlData": {
+      "segmentedControlItems": null
+    },
+    "catalogPresentationData": {
+    }
+  }
+}
