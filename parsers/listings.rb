@@ -134,7 +134,6 @@ json["data"]['catalog']&.each do |section|
                 body: bodyProduct, 
                 vars: {
                     _collection: "products",
-                    products_storeUUID: products_storeUUID,
                     _id: prod_id, 
                     competitor_name: "FRESH MARKET",
                     competitor_type: "dmart",
