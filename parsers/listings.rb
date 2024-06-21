@@ -3,7 +3,7 @@ require './lib/helpers'
 
 vars = page["vars"]
 current_page = 1
-# json_file = File.read('./xxx.json')
+
 json = JSON.parse(content)
 
 sub_categories = json['data']['segmentedControlData']['segmentedControlItems'].filter{|x| x['uuid']}.map{|x| 
@@ -27,7 +27,13 @@ json["data"]['catalog']&.each do |section|
         sub_section_name: payload["standardItemsPayload"]["title"]["text"],
         products_count: payload["standardItemsPayload"]["catalogItems"].count
     }
-  
+
+    # products_storeUUID = nil
+    # ctaUri = payload["standardItemsPayload"]["ctaUri"].to_s
+    # if ctaUri
+    #     match_data = ctaUri.match(/storeUUID=([a-zA-Z0-9\-]+)&sectionUUID/)
+    #     products_storeUUID = match_data[1] if match_data
+    # end 
 
     products = payload["standardItemsPayload"]["catalogItems"]
     products.each_with_index do |prod, idx|
@@ -105,14 +111,7 @@ json["data"]['catalog']&.each do |section|
         })
 
         item_identifiers = JSON.generate({barcode: "'#{barcode}'"})
-        # body = {
-        #     "cbType": "EATER_ENDORSED",
-        #     "itemRequestType": "ITEM",
-        #     "menuItemUuid": prod_id,
-        #     "sectionUuid": prod_sectionUuid,
-        #     "storeUuid": products_storeUUID,
-        #     "subsectionUuid": sub_section_id
-        # }.to_json 
+        
         bodyProduct = {
                 "cbType" => "EATER_ENDORSED",
                 "itemRequestType" => "ITEM",
@@ -123,9 +122,8 @@ json["data"]['catalog']&.each do |section|
         }.to_json
         
         if storeUUID_fromBody.nil?
-            
             outputs << {
-                _collection: "products",    
+                _collection: "products",
                 _id: prod_id,
                 competitor_name: "FRESH MARKET",
                 competitor_type: "dmart",
@@ -175,9 +173,9 @@ json["data"]['catalog']&.each do |section|
             pages << {
                 page_type: "products",
                 url: "https://www.ubereats.com/_p/api/getMenuItemV1?localeCode=cr-en",
-                method: "POST",             
-                headers: ReqHeaders::ProductsHeaders,
-                body: bodyProduct, 
+                method: "POST",
+                headers: ReqHeaders::ProductHeaders,
+                body: bodyProduct,
                 vars: {
                     _collection: "products",
                     _id: prod_id, 
@@ -189,7 +187,6 @@ json["data"]['catalog']&.each do |section|
                     language: "SPA",
                     currency_code_lc: "CRC",
                     scraped_at_timestamp: ((ENV['needs_reparse'] == 1 || ENV['needs_reparse'] == "1") ? (Time.parse(page['fetched_at']) + 1).strftime('%Y-%m-%d %H:%M:%S') : Time.parse(page['fetched_at']).strftime('%Y-%m-%d %H:%M:%S')),
-                    ###
                     competitor_product_id: prod_id,
                     name: prod_name,
                     brand: brand,
@@ -226,14 +223,7 @@ json["data"]['catalog']&.each do |section|
                     variants: nil,
                 }
             }
-
+            
         end
     end
 end
-
-# File.open("page5.json","w") do |f|
-#     f.write(JSON.pretty_generate(pages))
-# end
-# File.open("output5.json","w") do |f|
-#     f.write(JSON.pretty_generate(outputs))
-# end
