@@ -14,7 +14,10 @@ body_json_string = page["body"]
 hash = JSON.parse(body_json_string)
 storeUUID_fromBody = hash['storeFilters']['storeUuid']
 
+testCount = 0
+
 json["data"]['catalog']&.each do |section|
+    testCount += 1
     payload = section["payload"]
     sub_section_id = section["catalogSectionUUID"]
 
@@ -226,4 +229,5 @@ json["data"]['catalog']&.each do |section|
             
         end
     end
+    break 
 end
