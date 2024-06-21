@@ -75,7 +75,7 @@ sections.each do |section|
             store_rating: store_rating,
         }
     }
-    break
+    
 end
 
 # File.open("caa.json","w") do |f|
