@@ -32,16 +32,22 @@ module ReqHeaders
 		"x-csrf-token" => "x",
 		"x-uber-xps" => "%7B%7D",
 	}
-	ProductsHeaders = {
+	ProductHeaders = {
 		"authority" => "www.ubereats.com",
 		"method" => "POST",
 		"path" => "/api/getCatalogItemsBySectionV1",
 		"scheme" => "https",
-		"Accept" => "*/*", 
+		"Accept" => "*/*",
+		"Accept-Encoding" => "gzip, deflate, br, zstd",
+		"Accept-Language" => "en-US,en;q=0.5",
 		"Content-Type" => "application/json",
-		"Cookie" => "uev2.id.xp=9bf25384-7ee4-4370-a9b3-01669c637b83; dId=251def8d-22ce-4c48-a5e8-15d9e5cd78a8; marketing_vistor_id=52d4a4d2-2f7b-41f6-b729-a96fbf2b0701; jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg3MjQ4NzIsImV4cCI6MTcxODgxMTI3Mn0.eJJImxysuk0w12Sb1PicCrKIWGFAJZAnEjXcITLggHw;", 
+		"Cookie" => "uev2.id.xp=9bf25384-7ee4-4370-a9b3-01669c637b83; dId=251def8d-22ce-4c48-a5e8-15d9e5cd78a8; marketing_vistor_id=52d4a4d2-2f7b-41f6-b729-a96fbf2b0701; jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTg3MjQ4NzIsImV4cCI6MTcxODgxMTI3Mn0.eJJImxysuk0w12Sb1PicCrKIWGFAJZAnEjXcITLggHw; _gid=GA1.2.78136512.1718724875; _scid=b3cb06ae-77b3-4029-9b8d-96e7ebc999b4; _sctr=1%7C1718643600000; _ua={'session_id':'a3a77526-a91d-4f83-831b-0cd17d1e6302','session_time_ms':1718797377202}; uev2.loc=%7B%22address%22%3A%7B%22address1%22%3A%22San%20Jos%C3%A9%22%2C%22address2%22%3A%22Province%22%2C%22aptOrSuite%22%3A%22%22%2C%22eaterFormattedAddress%22%3A%22San%20Jos%C3%A9%20Province%2C%20San%20Jos%C3%A9%2C%20Costa%20Rica%22%2C%22subtitle%22%3A%22Province%22%2C%22title%22%3A%22San%20Jos%C3%A9%22%2C%22uuid%22%3A%22%22%7D%2C%22latitude%22%3A9.9280694%2C%22longitude%22%3A-84.0907246%2C%22reference%22%3A%22ChIJxRUNxULjoI8RgrgRn2pqdOY%22%2C%22referenceType%22%3A%22google_places%22%2C%22type%22%3A%22google_places%22%2C%22addressComponents%22%3A%7B%22city%22%3A%22San%20Jos%C3%A9%22%2C%22countryCode%22%3A%22CR%22%2C%22firstLevelSubdivisionCode%22%3A%22San%20Jos%C3%A9%20Province%22%2C%22postalCode%22%3A%22%22%7D%2C%22categories%22%3A%5B%22locality%22%2C%22political%22%5D%2C%22originType%22%3A%22user_autocomplete%22%2C%22source%22%3A%22manual_auto_complete%22%2C%22userState%22%3A%22Unknown%22%7D; uev2.id.session=cacbba32-a738-4df8-8b3f-3112a5d79b79; uev2.ts.session=1718800352151; utag_main__sn=7; utag_main_ses_id=1718804202516%3Bexp-session; utag_main__ss=0%3Bexp-session; ",
+		"Origin" => "https://www.ubereats.com",
+		"Referer" => "https://www.ubereats.com/cr-en/store/fresh-market-rohrmoser-nunciatura/mDT4exWeQC-HSjy29Ktlew",
+		"Use" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
 		"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36",
 		"X-Csrf-Token" => "x",
 		"X-Uber-Client-Gitref" => "c6606bef8287b11227c4947885736e488a6f0c4d",
 	}
+
 end
