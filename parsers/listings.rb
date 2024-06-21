@@ -229,5 +229,5 @@ json["data"]['catalog']&.each do |section|
             
         end
     end
-    break 
+     
 end
