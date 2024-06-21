@@ -1,13 +1,15 @@
 require './lib/headers'
 require './lib/helpers'
 
-vars = page["vars"] 
+vars = page["vars"]
 current_page = 1
 
 json = JSON.parse(content)
 
 customer_price_lc = json["data"]['price'].to_f / 100.to_f
 base_price_lc = vars["base_price_lc"]
+
+customer_price_lc = base_price_lc if customer_price_lc == 0
 
 discount_percentage = nil
 
@@ -26,19 +28,3 @@ output = vars.merge({
 })
 
 outputs << output
-
-# File.open("qweqwe.json","w") do |f|
-#     f.write(JSON.pretty_generate(outputs))
-# end
-# File.open("json.json","w") do |f|
-#     f.write(JSON.pretty_generate(json))
-# end
-# File.open("body.json","w") do |f|
-#     f.write(JSON.pretty_generate(body))
-# end
-# File.open("headers.json","w") do |f|
-#     f.write(JSON.pretty_generate(headers))
-# end
-# File.open("vars.json","w") do |f|
-#     f.write(JSON.pretty_generate(vars))
-# end
